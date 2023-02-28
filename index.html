@@ -356,7 +356,7 @@
           <ul class="customers-list list">
             <li class="customers-item">
               <a class="customers-link link" href="">
-                <svg class="customers-icon" width="41" height="47">
+                <svg class="customers-icon">
                   <use href="./images/icons.svg#icon-ya-and-co"></use>
                 </svg>
               </a>
@@ -364,7 +364,7 @@
 
             <li class="customers-item">
               <a class="customers-link link" href="">
-                <svg class="customers-icon" width="40" height="52">
+                <svg class="customers-icon">
                   <use href="./images/icons.svg#icon-tagline-here"></use>
                 </svg>
               </a>
@@ -372,7 +372,7 @@
 
             <li class="customers-item">
               <a class="customers-link link" href="">
-                <svg class="customers-icon" width="44" height="41">
+                <svg class="customers-icon">
                   <use href="./images/icons.svg#icon-company"></use>
                 </svg>
               </a>
@@ -380,7 +380,7 @@
 
             <li class="customers-item">
               <a class="customers-link link" href="">
-                <svg class="customers-icon" width="84" height="41">
+                <svg class="customers-icon">
                   <use href="./images/icons.svg#icon-foster-peters"></use>
                 </svg>
               </a>
@@ -388,7 +388,7 @@
 
             <li class="customers-item">
               <a class="customers-link link" href="">
-                <svg class="customers-icon" width="63" height="45">
+                <svg class="customers-icon">
                   <use href="./images/icons.svg#icon-brand"></use>
                 </svg>
               </a>
@@ -396,7 +396,7 @@
 
             <li class="customers-item">
               <a class="customers-link link" href="">
-                <svg class="customers-icon" width="94" height="44">
+                <svg class="customers-icon">
                   <use href="./images/icons.svg#icon-company-tagline"></use>
                 </svg>
               </a>
@@ -418,7 +418,7 @@
           </p>
         </div>
         <div class="footer-social">
-          <p class="footer-social-title">Social media</p>
+          <p class="footer-title">Social media</p>
           <ul class="footer-social-list list">
             <li class="footer-social-item">
               <a class="footer-social-link link" href="">
@@ -453,17 +453,131 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <p class="footer-title">Subscribe</p>
+          <form class="subscribe-form">
+            <label class="subscribe-label">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-submit btn" type="submit">
+              <span class="subscribe-text">Subscribe</span>
+              <svg class="subscribe-icon">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- Modal Window-->
+    <!--  backdrop is-hidden -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>
-          <svg class="modal-close-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-black"></use>
+          <svg class="modal-close-icon">
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+
+        <!-- Form -->
+        <form class="modal-form">
+          <div class="fields-wrap">
+            <div class="form-field">
+              <label class="form-label" for="user-name">Name</label>
+              <div class="input-wrap">
+                <input
+                  class="form-input input-field"
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  placeholder=" "
+                  required
+                />
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="user-phone">Phone</label>
+              <div class="input-wrap">
+                <input
+                  class="form-input input-field"
+                  type="text"
+                  name="user-phone"
+                  id="user-phone"
+                  placeholder=" "
+                  required
+                />
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="user-email">Email</label>
+              <div class="input-wrap">
+                <input
+                  class="form-input input-field"
+                  type="text"
+                  name="user-email"
+                  id="user-email"
+                  placeholder=" "
+                  required
+                />
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="user-comment">Comment</label>
+              <textarea
+                class="form-textarea input-field"
+                type="textarea"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Text input"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-field">
+              <input
+                class="form-checkbox visually-hidden"
+                type="checkbox"
+                name="user-check"
+                id="user-check"
+                required
+              />
+
+              <label class="check-privacy" for="user-check">
+                <span
+                  ><svg class="check-icon">
+                    <use href="./images/icons.svg#icon-check"></use></svg
+                ></span>
+                I accept the terms and conditions of the &nbsp;
+                <a class="privacy-policy" href="">Privacy Policy</a>
+              </label>
+            </div>
+          </div>
+
+          <button class="hero-button btn">Send</button>
+        </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
